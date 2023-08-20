@@ -15,6 +15,9 @@ class CodesView(APIView):
         return Response(response, status=status.HTTP_400_BAD_REQUEST)
     
     def append_settlements_to_response(self, zip_code, resp):
+        """
+        It appends each of the settlements to the response created in create_first_part_of_response
+        """
         settlements_lookup = Code.objects.filter(d_codigo=zip_code)
         serializer = CodeSerializer(settlements_lookup, many=True)
         
