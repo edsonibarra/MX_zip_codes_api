@@ -12,6 +12,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Create .env file inside zip_code_mx/ directory and set environment variables for a remote or local database
+```
+SECRET_KEY=replaceThisSecretKey
+DATABASE_NAME=replaceThisDBNAME
+DATABASE_USER=replaceThisDBUSER
+DATABASE_PASS=replaceThisDBPASS
+DATABASE_HOST=replaceThisDBHOST
+DATABASE_PORT=replaceThisDBPORT
+```
+
 ## Run the server
 ```
 python3 manage.py runserver
