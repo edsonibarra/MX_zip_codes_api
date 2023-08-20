@@ -1,7 +1,9 @@
 from rest_framework import serializers
-from .models import Code
+
+from .models import ZipCodes
+
 
 class CodeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Code
+        model = ZipCodes
         fields = "__all__"  # Serialize all fields of the Book model

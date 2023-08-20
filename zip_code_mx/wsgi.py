@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'zip_code_mx.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "zip_code_mx.settings")
 
 application = get_wsgi_application()
