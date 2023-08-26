@@ -6,8 +6,11 @@ This is an api to get the settlements and details of the zip codes in Mexico.
 ```
 git clone git@github.com:edsonibarra/MX_zip_codes_api.git
 cd MX_zip_codes_api
-docker build -t doorvel .
-docker run -it -p 8000:8000 --name doorvelc doorvel
+```
+Set SECRET_KEY in a .env file inside root project directory
+```
+docker build -t mx_zip_codes .
+docker run -it -p 8000:8000 --name mx_zip_cont mx_zip_codes
 ```
 
 ## Installation
