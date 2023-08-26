@@ -1,0 +1,46 @@
+# .dockerignore
+
+# Exclude development and version control files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+*.git
+*.gitignore
+
+# Exclude static files that can be collected during Docker build
+static/
+media/
+
+# Exclude dependencies and virtual environment files
+venv/
+env/
+*.venv/
+*.env/
+*.egg-info/
+
+# Exclude build artifacts and compiled files
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.swp
+*.swo
+
+# Exclude local development settings
+local_settings.py
+
+# Exclude Docker related files
+Dockerfile
+docker-compose.yml
+.dockerignore
