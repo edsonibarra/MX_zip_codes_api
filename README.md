@@ -2,6 +2,14 @@
 Search Mexico zip codes with this API and its settlements
 This is an api to get the settlements and details of the zip codes in Mexico.
 
+## Installation with Docker
+```
+git clone git@github.com:edsonibarra/MX_zip_codes_api.git
+cd MX_zip_codes_api
+docker build -t doorvel .
+docker run -it -p 8000:8000 --name doorvelc doorvel
+```
+
 ## Installation
 
 ```bash
