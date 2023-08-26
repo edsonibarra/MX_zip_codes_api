@@ -41,9 +41,7 @@ class CodesView(APIView):
         """
         first = None
         try:
-            print("BEFORE QUERY")
             first = ZipCodes.objects.filter(d_codigo=zip_code).first()
-            print("FIRST", first)
         except Exception as e:
             print("Exeption:")
             print(e)
