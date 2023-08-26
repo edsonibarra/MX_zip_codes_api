@@ -12,6 +12,7 @@ Set SECRET_KEY in a .env file inside root project directory
 docker build -t mx_zip_codes .
 docker run -it -p 8000:8000 --name mx_zip_cont mx_zip_codes
 ```
+Go to ```http://localhost:8000/api/zipCodes/01000/```
 
 ## Installation
 
