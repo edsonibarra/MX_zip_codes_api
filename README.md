@@ -22,6 +22,17 @@ DATABASE_HOST=replaceThisDBHOST
 DATABASE_PORT=replaceThisDBPORT
 ```
 
+## If you want to use deafult sqlite3 database update the DATABASES section in zip_code_mx/settings.py for this:
+```
+DATABASES = {
+  'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+          'NAME': BASE_DIR / 'db.sqlite3',
+      }
+ }
+```
+After you this you can run the server. This will move all the data from the text file to sqlite3 DB. 
+
 ## Run the server
 ```
 python3 manage.py runserver
